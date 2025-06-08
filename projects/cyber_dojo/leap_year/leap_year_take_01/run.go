@@ -9,7 +9,7 @@ func main() {
 	fmt.Println("Start app:", appName)
 
 	exampleYears := []int{
-		2001, 1996, 1900, 2000, 2023, 2024, 0,
+		2001, 1996, 1900, 2000, 2023, 2024,
 	}
 
 	for _, year := range exampleYears {
@@ -17,5 +17,5 @@ func main() {
 		fmt.Printf("Is %d a leap year: %t\n", year, result)
 	}
 
-	fmt.Println("\nEnd app:", appName)
+	fmt.Println("End app:", appName)
 }

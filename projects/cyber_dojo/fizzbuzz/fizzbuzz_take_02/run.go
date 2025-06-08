@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	appName := "Quicksort for regular integers"
+	appName := "Fizzbuzz"
 	fmt.Println("Start app", appName)
 
 	res := FizzbuzzRange(15)
