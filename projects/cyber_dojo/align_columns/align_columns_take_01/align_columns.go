@@ -59,7 +59,7 @@ func AlignColumns(text string, alignment ColumnAlignment) string {
 	// Format each line according to the alignment
 	var result strings.Builder
 
-	for _, part := range parts {
+	for i, part := range parts {
 		for colIdx, word := range part {
 			padding := widths[colIdx] - len(word)
 
@@ -82,6 +82,10 @@ func AlignColumns(text string, alignment ColumnAlignment) string {
 			if colIdx < len(part)-1 {
 				result.WriteString(FillCh)
 			}
+		}
+		// Add a newline for all lines except the last one
+		if i < len(parts)-1 {
+			result.WriteString("\n")
 		}
 	}
 

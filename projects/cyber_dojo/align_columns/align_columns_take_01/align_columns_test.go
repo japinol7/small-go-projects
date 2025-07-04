@@ -21,9 +21,9 @@ func init() {
 
 func TestAlignColumnsLeft(t *testing.T) {
 	// Original string with spaces and $ as separators
-	ExpectedOrig := "Given  a          text      file   of     many     lines,     where    fields within  a  line" +
-		"are    delineated by        a      single 'dollar' character, write    a      program" +
-		"that   aligns     each      column of     fields   by         ensuring that   words   in each" +
+	ExpectedOrig := "Given  a          text      file   of     many     lines,     where    fields within  a  line\n" +
+		"are    delineated by        a      single 'dollar' character, write    a      program\n" +
+		"that   aligns     each      column of     fields   by         ensuring that   words   in each\n" +
 		"column are        separated by     at     least    one        space.  "
 
 	// Replace spaces with FillCh
@@ -37,9 +37,9 @@ func TestAlignColumnsLeft(t *testing.T) {
 
 func TestAlignColumnsRight(t *testing.T) {
 	// Original string with spaces and $ as separators
-	ExpectedOrig := " Given          a      text   file     of     many     lines,    where fields  within  a line" +
-		"   are delineated        by      a single 'dollar' character,    write      a program" +
-		"  that     aligns      each column     of   fields         by ensuring   that   words in each" +
+	ExpectedOrig := " Given          a      text   file     of     many     lines,    where fields  within  a line\n" +
+		"   are delineated        by      a single 'dollar' character,    write      a program\n" +
+		"  that     aligns      each column     of   fields         by ensuring   that   words in each\n" +
 		"column        are separated     by     at    least        one   space."
 
 	// Replace spaces with FillCh
@@ -53,9 +53,9 @@ func TestAlignColumnsRight(t *testing.T) {
 
 func TestAlignColumnsCenter(t *testing.T) {
 	// Original string with spaces and $ as separators
-	ExpectedOrig := "Given      a        text     file    of     many     lines,    where   fields within  a  line" +
-		" are   delineated    by       a    single 'dollar' character,  write     a    program" +
-		" that    aligns     each    column   of    fields      by     ensuring  that   words  in each" +
+	ExpectedOrig := "Given      a        text     file    of     many     lines,    where   fields within  a  line\n" +
+		" are   delineated    by       a    single 'dollar' character,  write     a    program\n" +
+		" that    aligns     each    column   of    fields      by     ensuring  that   words  in each\n" +
 		"column    are     separated   by     at    least      one      space. "
 
 	// Replace spaces with FillCh
